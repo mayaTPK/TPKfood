@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+
+}
+
+main{
+    background-image: url(/assets/My_images/background5.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+
+
+
+
+/* HEADER/NAVBAR DESIGN */
+.navbar li, .dropd_menu li{
+    list-style: none;
+}
+
+.navbar a, .dropd_menu a{
+    text-decoration: none;
+    color: #fffefe;
+    font-size: 1rem;
+}
+
+.navbar a:hover, .dropd_menu a:hover{
+    color: orange;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200PX;
+    margin: auto;
+    display: flex;
+    /* align-items: end; */
+    justify-content: space-between;
+    background-color: #24262b96;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+.logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: rgba(18, 18, 19, 0.473);
+    color: #141414;
+    padding: 0.8rem;
+    /* border: none; */
+    /* outline: none; */
+    border-radius: 20px; 
+    font-style: 0.8rem;
+    font-weight: bold;
+    /* cursor: pointer; */
+    /* transition: scale 0.2 ease; */
+}
+
+.action_btn:hover{
+    scale: 1.03;
+    /* color: #fff; */
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+/* DROPDOWN MENU DESIGN*/
+.dropd_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropd_menu.open{
+    height: 270px;
+    background-color: #24262b88;
+}
+
+.dropd_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropd_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* RESPONSIVE DESIGN FOR NAVBAR */
+@media(max-width: 800px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropd_menu{
+        display: block;
+    }
+}
+@media(max-width: 550px){
+    .dropd_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+/* POPOUT GET STARTED PAGE  */
+#popout-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#popout-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#popout-content a{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(13, 20, 61);
+}
+
+#popout-content h2{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero THE WELOCOME MESSSAGE*/
+section#hero{
+    height: calc(100vh - 60px);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #0e0d0d;
+
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+/* FOOTER CSS DESIGN */
+.footer{
+    background-color: rgb(39, 36, 36);
+    padding: 70px 0;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer ul{
+    list-style: none;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;  
+}
+
+.footer .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-3 .col-sm-6{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer h4{
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer ul li a{
+    font-size: 16;
+    text-transform: capitalize;
+    color: #d1c5c5;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+}
+
+.footer ul li a:hover{
+    color: white;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.footer .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.footer .social-links a:hover{
+    color: #24262b;
+    background-color: #fff;
+}

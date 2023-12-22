@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOOTSTRAP  -->
+    <link rel="stylesheet" href="/assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="/assets/My_CSS/cart.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TPKFood</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-smile"></i></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search your fav food" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="welcome my-5">
+        <h1>Your Cart</h1>
+      </div>
+
+      <hr>
+      <!-- main cart -->
+      <div class="container my-5">
+        <!-- Meal 1 -->
+        <div class="row">
+          <div class="col-1 mb-3">
+            <input type="checkbox" name="" id="" checked>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <!-- Meal card in the cart -->
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 col-sm-6">
+                    <img src="/assets/My_images/background5.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">5 Chicken wing</h5>
+                      <p class="card-text">This is delicious</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-2 col-sm-6 mb-3">
+            <!-- Price of the meal -->
+            <input class="mealPrice border" placeholder="K500/1">
+          </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="mealcountborder">
+              <button class="minus">-</button>
+              <input type="number" class="form-control mealCount" placeholder="2" disabled>
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <!-- Meal 2 -->
+        <div class="row">
+          <div class="col-1 mb-3">
+            <input type="checkbox" name="" id="" checked>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <!-- Meal card in the cart -->
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 col-sm-6">
+                    <img src="/assets/My_images/background4.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Vipswa Mangoes</h5>
+                      <p class="card-text">delightiful friuts</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-2 col-sm-6 mb-3">
+            <!-- Price of the meal -->
+            <input class="mealPrice border" placeholder="K500/1">
+          </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="mealcountborder">
+              <button class="minus">-</button>
+              <input type="number" class="form-control mealCount" placeholder="2" disabled>
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <!-- Meal 3 -->
+        <div class="row">
+          <div class="col-1 mb-3">
+            <input type="checkbox" name="" id="" checked>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <!-- Meal card in the cart -->
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 col-sm-6">
+                    <img src="/assets/My_images/background3.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Yellow Nsima</h5>
+                      <p class="card-text">Test the flames</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-2 col-sm-6 mb-3">
+            <!-- Price of the meal -->
+            <input class="mealPrice border" placeholder="K500/1">
+          </div>
+          <div class="col-md-3 col-sm-6 mb-3">
+            <div class="mealcountborder">
+              <button class="minus">-</button>
+              <input type="number" class="form-control mealCount" placeholder="2" disabled>
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <hr>
+        </div>
+        
+        <hr>
+
+        <!-- cart wrap -->
+        <div class="cartWrap">
+          <h3>Cart Wrap Price</h2>
+            <!-- price on meal -->
+          <div class="MealName">
+            <h5>5 Chicken wings </h4>
+            <input class="mealPrice border" placeholder="K2000">
+          </div>
+          <div class="MealName">
+            <h5>Vipswa Mangoes </h4>
+            <input class="mealPrice border" placeholder="K2000">
+          </div>
+          <div class="MealName">
+            <h5>Yellow Nsima</h4>
+            <input class="mealPrice border" placeholder="K1000">
+          </div>
+          <!-- total price -->
+          <div class="total">
+            <h4>Total</h4>
+            <input class="mealPrice border" placeholder="K5000">
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-secondary" type="button">Proceed to checkout</button>
+          </div>
+        </div>        
+      </div>
+   
+      
+   <!-- THE PAGE FOOTER -->
+   <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">afflite program</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">delivery</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h4>Online order</h4>
+                <ul>
+                    <li><a href="#">nsima</a></li>
+                    <li><a href="#">rice</a></li>
+                    <li><a href="#">spaghetti</a></li>
+                    <li><a href="#">potatoes</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+      
+    <!-- BOOTSTRAP JS  -->
+    <script src="/assets/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kudya</title>
+
+    <!-- Include Leaflet CSS and JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- LOCAL CSS  -->
+    <link rel="stylesheet" href="assets/My_CSS/index.css">
+
+    <!-- BOOTSTRAP  -->
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+
+</head>
+<body>
+
+
+
+    <!-- THE MAIN PAGE CONTENT -->
+    <main>
+
+    <!-- THE WEB HEADER -->
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">TPKf</a></div>
+            <ul class="links">
+                <li><a href="Home">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Services">Services</a></li>
+                <li><a href="assets/Customer/signIn.html">Sign In</a></li>
+            </ul>
+            <a href="#" class="action_btn" onclick="openPopout()">Get started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropd_menu">
+            <li><a href="Home">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Services">Services</a></li>
+            <li><a href="signIn.html">Sign In</a></li>
+            <li><a href="#" class="action_btn" onclick="openPopout()">Get started</a></li>
+        </div>
+    </header>
+    
+    <!-- POPOUT GET STARTED PAGE  -->
+
+    <div id="popout-container">
+        <div id="popout-content">
+            <span id="close-button" onclick="closePopout()">&#10006;</span>
+            <hr>
+            <h2>Join and work with us</h2>
+            <hr>
+            <div class="container-md">
+                <div class="row">
+                    <div class="col">
+                        <a href="/assets/Customer/signUp.html">Join to order your favorite food</a> 
+                    </div> 
+                </div> 
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <a href="#">be a delivery paterner</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <a href="#">Add your restaurant or food bussiness to TPKFood</a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <section id="hero">
+        <h1>Welcome to TPKfood fam</h1>
+        <p>Kuoda chakudya chomwe chili pafupi ndi inu</p>
+    </section>
+
+
+    <!-- MAP SHOWING YOUR CURRENT POSITION -->
+    <!-- Map container -->
+    <div id="map" style="height: 500px;"></div>
+    
+    <!-- HOMEPAGE PICTURES -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-3">
+                <a href="#">
+                    <img src="assets/My_images/background1.jpg" class="img-fluid" alt="image">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-3">
+                <a href="#">
+                    <img src="assets/My_images/background2.jpg" class="img-fluid" alt="image">
+                </a>
+            </div>
+            <div class="col mb-3">
+                <a href="#">
+                    <div class="card bg-dark text-white">
+                        <img src="/assets/My_images/background1.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay" style="color: black;">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                      </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+    </main>
+    <!-- THE PAGE FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">afflite program</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">delivery</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>Online order</h4>
+                    <ul>
+                        <li><a href="#">nsima</a></li>
+                        <li><a href="#">rice</a></li>
+                        <li><a href="#">spaghetti</a></li>
+                        <li><a href="#">potatoes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LOCAL JS  -->
+    <script src="assets/My_JS/index.js"></script>
+
+    <!-- BOOTSTRAP JS  -->
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+</html>
